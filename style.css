@@ -1,0 +1,196 @@
+:root{
+    --background-color: #202225;
+    --secondary-color: #2F3136;
+    --search-color:#40444B;
+    --search-text: #727670;
+    --text-color:#DCDDDE;
+    --second-text-color: #A9A9A9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+}
+
+body{
+    color:white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+/* HEADER 1: Logo */
+.title-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+    margin-bottom: 15px;
+    margin-top:20px
+}
+
+.title-box .search{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--search-color);
+    width:325px;
+    padding: 10px 20px;
+    border-radius:30px;
+}
+
+.title-box .search span:first-child{
+    color:var(--search-text)
+}
+
+/* HEADER 1 : Nav */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:var(--text-color);
+    transition: .1s;
+}
+
+a:hover{
+    color: white;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    background-color: var(--second-text-color);
+    padding:0 15px;
+    border: none;
+}
+
+/* SECTION 1: Profile */
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 200px;
+    box-sizing: border-box;
+}
+
+.profile-section .stuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;        
+}
+
+.profile-section .profile{
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+}
+
+.profile-section .profile .text p{
+    font-size: 2em;
+}
+
+.profile-section .profile .text button{
+    border-radius: 5px;
+    border : none;
+    padding : 5px;  
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.profile-section .stats{
+    display:flex;
+    flex-direction: row;
+}
+
+.profile-section .stats > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px 20px;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    box-sizing: border-box;
+}
+
+.profile-section .stats > div:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+
+.profile-section .stats .rating,
+.profile-section .stats .reviews,
+.profile-section .stats .lists,
+.profile-section .stats .following,
+.profile-section .stats .followers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section .stats .rating,
+.profile-section .stats .reviews,
+.profile-section .stats .lists,
+.profile-section .stats .following,
+.profile-section .stats .followers:hover{
+    cursor: pointer;
+}
+
+.profile-section .stats p.text.stats{
+    font-size: 0.8em;
+    color: var(--text-color);
+    color:var(--second-text-color)
+}
+
+.profile-section .stats p.text.stats.zero{
+    font-size: 2.5em;
+    color: var(--text-color);
+}
+
+.profile-section .other-stuff{
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    width: 100%;
+    border-radius: 4px;
+}
+
+.profile-section .other-stuff button{
+    color: var(--text-color);
+    height : 25px;
+    width: 110px;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    outline: none;
+    cursor : pointer;
+    border: none;
+    border-right: 1px solid var(--background-color);
+    transition: .1s;    
+}
+.profile-section .other-stuff button:last-child {
+    border-right: none;
+}
+
+.profile-section .other-stuff button:hover{
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+
