@@ -44,7 +44,7 @@ body{
 }
 
 .title-box .search span:first-child{
-    color:var(--search-text)
+    color:var(--second-text-color)
 }
 
 /* HEADER 1 : Nav */
@@ -170,6 +170,7 @@ a:hover{
     background-color: var(--secondary-color);
     width: 100%;
     border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .profile-section .other-stuff button{
@@ -193,4 +194,71 @@ a:hover{
     color: var(--background-color);
 }
 
+/* SECTION 2: Favourites */
+.favourites{
+    padding: 0 200px;
+    box-sizing: border-box;
+}
 
+.favourites .favourites-text{
+    display: flex;
+    color : var(--text-color)
+}
+
+.favourites .favourites-text .albums{
+    position: relative;
+    left: 900px;
+    font-size: 0.8em;
+    transition: .1s;
+}
+
+.favourites .favourites-text .albums a:hover{
+    text-decoration: underline;
+}
+
+.favourites .box{
+    width: 1100px;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.favourites .box .fav-albums{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.favourites .box .fav-albums img{
+    display: flex;
+    max-width:190px;
+    max-height:190px;
+    width: auto;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+.favourites .box .fav-albums .cell:nth-child(2) img{
+    width: 190px;
+    height: 190px;
+}
+
+.favourites .box .fav-albums .cell{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--secondary-color);
+    max-width: 190px;
+    padding-bottom: 9px;
+}
+
+.favourites .box .fav-albums .cell a.grey-text{
+    color : var(--second-text-color)
+}
+
+.favourites .box .fav-albums .cell a{
+    color:var(--text-color)
+}
+
+.favourites .box .fav-albums .cell a.grey-text:hover,
+.favourites .box .fav-albums .cell a:hover{
+    text-decoration: underline;
+}
