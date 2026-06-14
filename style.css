@@ -2,7 +2,7 @@
     --background-color: #202225;
     --secondary-color: #2F3136;
     --search-color:#40444B;
-    --search-text: #727670;
+    --search-text: #72767D;
     --text-color:#DCDDDE;
     --second-text-color: #A9A9A9;
 }
@@ -19,7 +19,7 @@ html{
 }
 
 body{
-    color:white;
+    color:var(--text-color);
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
 }
@@ -44,7 +44,7 @@ body{
 }
 
 .title-box .search span:first-child{
-    color:var(--second-text-color)
+    color:var(--search-text)
 }
 
 /* HEADER 1 : Nav */
@@ -155,7 +155,7 @@ a:hover{
 .profile-section .stats p.text.stats{
     font-size: 0.8em;
     color: var(--text-color);
-    color:var(--second-text-color)
+    color:var(--second-text-color);
 }
 
 .profile-section .stats p.text.stats.zero{
@@ -170,7 +170,7 @@ a:hover{
     background-color: var(--secondary-color);
     width: 100%;
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .profile-section .other-stuff button{
@@ -207,7 +207,7 @@ a:hover{
 
 .favourites .favourites-text .albums{
     position: relative;
-    left: 900px;
+    left: 920px;
     font-size: 0.8em;
     transition: .1s;
 }
@@ -219,6 +219,7 @@ a:hover{
 .favourites .box{
     width: 1100px;
     border-top: 2px solid var(--secondary-color);
+    margin-bottom: 40px;
 }
 
 .favourites .box .fav-albums{
@@ -261,4 +262,400 @@ a:hover{
 .favourites .box .fav-albums .cell a.grey-text:hover,
 .favourites .box .fav-albums .cell a:hover{
     text-decoration: underline;
+}
+
+/* SECTION 3: Recently Rated */
+.recently-rated{
+    padding: 0 200px;
+    box-sizing: border-box;
+}
+
+.recently-rated .box{
+    width: 1100px;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.recently-rated .recently-rated-text{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--text-color);
+}
+
+.recently-rated .recently-rated-text .view{
+    position: relative;
+    left : 910px;
+    font-size: 0.8em;
+    transition: .1s;
+}
+
+.recently-rated .recently-rated-text .view a:hover{
+    text-decoration: underline;
+}
+
+.recently-rated .box .recently-rated-albums{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    gap:6.8px;
+    padding:14px; 
+}
+
+.recently-rated .recently-rated-albums img{
+    display: flex;
+    max-width:190px;
+    max-height:190px;
+    width: auto;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+.recently-rated .recently-rated-albums .cell .info{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--secondary-color);
+    max-width: 190px;
+    padding-bottom: 9px;
+}
+
+.recently-rated .recently-rated-albums .cell .info a.grey-text{
+    color:var(--second-text-color);
+    transition: .1s;
+}
+
+.recently-rated .recently-rated-albums .cell .info a{
+    color:var(--text-color);
+    transition: .1s;
+}
+
+.recently-rated .recently-rated-albums .cell .info a:hover{
+    text-decoration: underline;
+}
+
+.recently-rated .recently-rated-albums .cell .info .date{
+    display: flex;
+    justify-content: space-between;
+    color: var(--second-text-color);
+    font-size: 0.87em;
+}
+
+.recently-rated .recently-rated-albums .cell .stats{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4px;
+    padding: 2px;
+    margin-bottom: 33px;
+}
+
+.recently-rated .recently-rated-albums .cell .stats .actual-stats{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.recently-rated .recently-rated-albums .cell .stats .actual-stats p{
+    position:relative;
+    left: 8px;
+    padding-bottom: 3px;
+}
+
+.recently-rated .recently-rated-albums .cell .stats .rating{
+    background-color: var(--search-color);
+    width: 35px;
+    height:4.5px;
+    overflow:hidden 
+}
+
+.recently-rated .recently-rated-albums .cell .stats .rating .ratingGreen{
+    background-color: #85CE73;
+    width: calc(var(--rating) * 1%);
+    height: 4.5px;
+    display: block;
+}
+
+.recently-rated .recently-rated-albums .cell .stats .date{
+    display: flex;
+    align-items: center;
+    color: var(--second-text-color);
+    padding-left: 10px;
+    font-size: 0.8em;
+}
+
+.recently-rated .recently-rated-albums .cell .stats .date i{
+    padding-left: 5px;
+}
+
+/* SECTION 4: Recent reviews */
+.recent-reviews{
+    padding: 0 200px;
+    box-sizing: border-box;
+}
+
+.recent-reviews .box{
+    width: 1100px;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.recent-reviews .recent-reviews-text{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.recent-reviews .recent-reviews-text .view{
+    position: relative;
+    left : 930px;
+    font-size: 0.9em;
+    transition: .1s;
+}
+
+.recent-reviews .recent-reviews-text .view a:hover{
+    text-decoration: underline;
+}
+
+.recent-reviews .box .cell{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 1100px;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.recent-reviews .box .cell img{
+    display: flex;
+    max-width:70px;
+    max-height:70px;
+    width: auto;
+    height: auto;
+    border: 1px solid var(--secondary-color);
+}
+
+.recent-reviews .box .cell .left{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.recent-reviews .box .cell .left .info .grey-text a{
+    color: var(--second-text-color);
+    transition: .1s;
+}
+
+.recent-reviews .box .cell .left .info .album-name{
+    padding-bottom: 5px;
+}
+
+.recent-reviews .box .cell .left .info .grey-text a:hover,
+.recent-reviews .box .cell .left .info .album-name a:hover{
+    text-decoration: underline;
+}
+
+.recent-reviews .box .cell .left .info .score{
+    position:relative;
+    left: 8px;
+    padding-bottom: 2px;
+}
+
+.recent-reviews .box .cell .left .info .rating{
+    background-color: var(--search-color);
+    width: 35px;
+    height:4.5px;
+    overflow:hidden;
+}
+
+.recent-reviews .box .cell .left .info .rating .ratingGreen{
+    background-color: #85CE73;
+    width: calc(var(--rating) * 1%);
+    height: 4.5px;
+    display: block;
+}
+
+.recent-reviews .box .cell .left .info .review{
+    padding-top : 20px;
+}
+
+.recent-reviews .box .cell .left .info .icons{
+    padding-top: 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.recent-reviews .box .cell .right i{
+    font-size: 20px;
+}
+
+/* SECTION 5: Links */
+.links{
+    padding: 0 200px;
+    box-sizing: border-box;
+    padding-top : 100px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    padding-bottom: 17px;
+}
+
+.links .playlist{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: #2EBD59;
+    width: 115.11px;
+    height: 34px;
+    border-radius: 4px;
+}
+
+.links .ad-free{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #729F98;
+    width: 115.11px;
+    height: 34px;
+    border-radius: 4px;
+}
+
+/* ASIDE */
+.main{
+    display: flex;
+}
+
+.aside-box{
+    box-sizing: border-box;
+}
+
+.aside-box .box{
+    width: 355px;
+    height: 2075px;
+    background-color: var(--secondary-color);
+    margin-left: -165px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.aside-box .box .about-rating{
+    width: 320px;
+    height: 350px;
+    background-color: var(--background-color);
+}
+
+.aside-box .box .subscriber{
+    width: 320px;
+    height: 100px;
+    background-color: #729F98;
+    padding: 5px;
+}
+
+.aside-box .box .subscriber .text{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.aside-box .box .subscriber .text{
+    color: #f0eceb;
+    position: relative;
+    bottom: 10px;
+}
+
+.aside-box .box .subscriber .left{
+    font-size: 80px;
+}
+
+.aside-box .box .subscriber .right strong{
+    font-size: 1.2em;
+}
+
+.aside-box .box .member{
+    width: 320px;
+    height: 150px;
+    background-color: var(--background-color);
+    padding: 12px;
+}
+
+.aside-box .box .member .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aside-box .box .member .text .stats,
+.aside-box .box .member .text .contributions{
+    position: relative;
+    left: 3px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.aside-box .box .member .text .stats button,
+.aside-box .box .member .text .contributions button{
+    background: none;
+    border: none;
+    color: var(--text-color);
+    transition: .1s;
+}
+
+.aside-box .box .member .text .stats button:hover,
+.aside-box .box .member .text .contributions button:hover{
+    opacity: 0.4;
+}
+
+/* FOOTER */
+.footer-box{
+    width: 100%;
+    height: 325px;
+    background-color: var(--secondary-color);
+    padding: 25px 200px;
+    box-sizing: border-box;
+}
+
+.footer-box .up{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-box .up .left{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.footer-box .up .left .cell{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+
+.footer-box .up .left .cell .grey-text{
+    color: var(--search-text);
+}
+
+.footer-box .up .left .cell a{
+    transition: .1s;
+}
+
+.footer-box .up .left .cell a:hover{
+    text-decoration: underline;
+}
+
+.footer-box .up .right .icons i{
+    height: 50px;
+    font-size: 20px;
+}
+
+.footer-box .down{
+    padding-top: 20px;
+    color: var(--second-text-color);
 }

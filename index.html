@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AOTY Profile Page</title>
-    <link rel="icon" type="image/x-icon" href="images/aoty logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link class="image/x-icon" href="images/aoty logo.png" rel="icon" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" referrerpolicy="no-referrer" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- HEADER 1: Logo -->
         <div class="title-box">
             <div class="title">
-                <img src="images/image_2026-06-12_203411583-removebg-preview.png" height = 30 alt="AOTY logo">
+                <img alt="AOTY logo" height="30" src="images/image_2026-06-12_203411583-removebg-preview.png">
             </div>
             <div class="search">
                 <span>search albums, artists, genres, etc.</span>
@@ -25,7 +24,6 @@
         </div>
 
         <nav>
-            <!-- HEADER 2: Nav -->
             <a href="#">Best albums</a>
             <a href="#">Discover</a>
             <a href="#">New Releases</a>
@@ -35,18 +33,17 @@
             <a href="#">Community</a>
 
             <div class="last">
-                <img src="images/smily_boi-removebg-preview.png" height = 40px alt="Profile picture">
+                <img alt="Profile picture" height="40px" src="images/smily_boi-removebg-preview.png">
                 <a href="#">SkabaYay</a>
             </div>
         </nav>
     </header>
     
     <main>
-        <!-- SECTION 1: Profile -->
         <section class="profile-section">
             <div class="stuff">
                 <div class="profile">
-                    <img src="images/smily_boi-removebg-preview.png" height = 200px alt="">
+                    <img alt="" height="200px" src="images/smily_boi-removebg-preview.png">
                     <div class="text">
                         <p>SkabaYay</p>
                         <button>
@@ -58,7 +55,7 @@
 
                 <div class="stats">
                     <div class="rating">
-                        <p class="text stats zero">224</p>
+                        <p class="text stats zero">226</p>
                         <div><p class="text stats">RATINGS</p></div>
                     </div>
                     <div class="reviews">
@@ -90,56 +87,527 @@
                 <button>FOLLOWERS</button>
                 <button>FOLLOWING</button>
             </div>
-
         </section>
 
-        <!-- SECTION 2: Favourites -->
-         <section class="favourites">
-            <div class="favourites-text">
-                <div class="literal-favourite-text">
-                    <strong>FAVORITES</strong>
-                    <span><i class="fa-solid fa-pen-to-square"></i></span>
-                </div>
-                <div class="albums">
-                    <a href="#">ALBUMS</a>
-                    <span><i class="fa-solid fa-rotate"></i></span>
-                    <span><i class="fa-solid fa-gear"></i></span>
-                </div>
-            </div>
-            <div class="box">
-                <div class="fav-albums">
-                    <div class="cell">
-                        <img src="albums for aoty static page/lift your skinny fists.jpg" alt="lift your skinny fists">
-                        <a href="#" class="grey-text">Godspeed You Black Empe...</a>
-                        <a href="#"><strong>Lift Yr. Skinny Fists Like...</strong></a>
+        <div class="main">
+            <div class="left">
+                <section class="favourites">
+                    <div class="favourites-text">
+                        <div class="literal-favourite-text">
+                            <strong>FAVORITES</strong>
+                            <span><i class="fa-solid fa-pen-to-square"></i></span>
+                        </div>
+                        <div class="albums">
+                            <a href="#">ALBUMS</a>
+                            <span><i class="fa-solid fa-rotate"></i></span>
+                            <span><i class="fa-solid fa-gear"></i></span>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <img src="albums for aoty static page/luv sic.jpg" alt="luv sic hexalogy">
-                        <a href="#" class="grey-text">Nujabes</a>
-                        <a href="#"><strong>Luv(sic) Hexalogy</strong></a>
+                    <div class="box">
+                        <div class="fav-albums">
+                            <div class="cell">
+                                <img alt="lift your skinny fists" src="albums for aoty static page/lift your skinny fists.jpg">
+                                <a class="grey-text" href="#">Godspeed You Black Empe...</a>
+                                <a href="#"><strong>Lift Yr. Skinny Fists Like...</strong></a>
+                            </div>
+                            <div class="cell">
+                                <img alt="luv sic hexalogy" src="albums for aoty static page/luv sic.jpg">
+                                <a class="grey-text" href="#">Nujabes</a>
+                                <a href="#"><strong>Luv(sic) Hexalogy</strong></a>
+                            </div>
+                            <div class="cell">
+                                <img alt="since i left you" src="albums for aoty static page/since-i-left-you-3.jpg">
+                                <a class="grey-text" href="#">The Avalanches</a>
+                                <a href="#"><strong>Since I Left You</strong></a>
+                            </div>
+                            <div class="cell">
+                                <img alt="fishmans" src="albums for aoty static page/fishmans ahhhh.jpg">
+                                <a class="grey-text" href="#">Fishmans</a>
+                                <a href="#"><strong>98.12.28 Otakotachi no...</strong></a>
+                            </div>
+                            <div class="cell">
+                                <img alt="ceres and calypso" src="albums for aoty static page/ceres and calypso.jpg">
+                                <a class="grey-text" href="#">Candy Claws</a>
+                                <a href="#"><strong>Ceres & Calypso in the D...</strong></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <img src="albums for aoty static page/since-i-left-you-3.jpg" alt="since i left you">
-                        <a href="#" class="grey-text">The Avalanches</a>
-                        <a href="#"><strong>Since I Left You</strong></a>
-                    </div>
-                    <div class="cell">
-                        <img src="albums for aoty static page/fishmans ahhhh.jpg" alt="fishmans">
-                        <a href="#" class="grey-text">Fishmans</a>
-                        <a href="#"><strong>98.12.28 Otakotachi no...</strong></a>
-                    </div>
-                    <div class="cell">
-                        <img src="albums for aoty static page/ceres and calypso.jpg" alt="ceres and calypso">
-                        <a href="#" class="grey-text">Candy Claws</a>
-                        <a href="#"><strong>Ceres & Calypso in the D...</strong></a>
-                    </div>
-                </div>
-            </div>
-         </section>
-    </main>
+                </section>
 
+                <section class="recently-rated">
+                    <div class="recently-rated-text">
+                        <div class="literal-recently-rated-text">
+                            <strong>RECENTLY RATED</strong>
+                        </div>
+                        <div class="view">
+                            <a href="#">VIEW ALL</a>
+                            <span><i class="fa-solid fa-gear"></i></span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="recently-rated-albums">
+                            <div class="cell">
+                                <div class="info">
+                                    <img alt="soft lipa skull" src="albums for aoty static page/soft lipa 1.jpg">
+                                    <a class="grey-text" href="#">Soft Lipa</a>
+                                    <a href="#"><strong>Secrets of Tu Cheng Hsi</strong></a>
+                                    <div class="date">
+                                        <span>2013 • LP</span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="actual-stats">
+                                        <p>79</p>
+                                        <div class="rating">
+                                            <div class="ratingGreen" style="--rating:79;"></div>
+                                        </div>
+                                    </div>
+                                    <span class="date">
+                                        4h ago
+                                        <i class="fa-solid fa-ban" style="color: red;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="info">
+                                    <img alt="soft lipa cup" src="albums for aoty static page/soft lipa 2.jpg">
+                                    <a class="grey-text" href="#">Soft Lipa</a>
+                                    <a href="#"><strong>Winter Sweet</strong></a>
+                                    <div class="date">
+                                        <span>2009 • LP</span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="actual-stats">
+                                        <p>83</p>
+                                        <div class="rating">
+                                            <div class="ratingGreen" style="--rating:83;"></div>
+                                        </div>
+                                    </div>
+                                    <span class="date">
+                                        6h ago
+                                        <i class="fa-solid fa-ban" style="color: red;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="info">
+                                    <img alt="90mh" src="albums for aoty static page/90mph.jpg">
+                                    <a class="grey-text" href="#">Trefuego</a>
+                                    <a href="#"><strong>90mh</strong></a>
+                                    <div class="date">
+                                        <span>2019 • Single</span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="actual-stats">
+                                        <p>90</p>
+                                        <div class="rating">
+                                            <div class="ratingGreen" style="--rating:90;"></div>
+                                        </div>
+                                    </div>
+                                    <span class="date">
+                                        Jun 4
+                                        <i class="fa-solid fa-ban" style="color: red;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="info">
+                                    <img alt="RAMONA" src="albums for aoty static page/backwoods.jpg">
+                                    <a class="grey-text" href="#">Kill Bill</a>
+                                    <a href="#"><strong>RAMONA</strong></a>
+                                    <div class="date">
+                                        <span>2014 • Mixtape</span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="actual-stats">
+                                        <p>87</p>
+                                        <div class="rating">
+                                            <div class="ratingGreen" style="--rating:87;"></div>
+                                        </div>
+                                    </div>
+                                    <span class="date">
+                                        Jun 2
+                                        <i class="fa-solid fa-ban" style="color: red;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="info">
+                                    <img alt="Kind Of Blue" src="albums for aoty static page/kind of blue.jpg">
+                                    <a class="grey-text" href="#">Miles Davis</a>
+                                    <a href="#"><strong>Kind of Blue</strong></a>
+                                    <div class="date">
+                                        <span>1959 • LP</span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="actual-stats">
+                                        <p>85</p>
+                                        <div class="rating">
+                                            <div class="ratingGreen" style="--rating:85;"></div>
+                                        </div>
+                                    </div>
+                                    <span class="date">
+                                        Jun 1
+                                        <i class="fa-solid fa-ban" style="color: red;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="info">
+                                    <img alt="Inferno" src="albums for aoty static page/inferno.jpg">
+                                    <a class="grey-text" href="#">Boards of Canada</a>
+                                    <a href="#"><strong>Inferno</strong></a>
+                                    <div class="date">
+                                        <span>2026 • LP</span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="actual-stats">
+                                        <p>92</p>
+                                        <div class="rating">
+                                            <div class="ratingGreen" style="--rating:92;"></div>
+                                        </div>
+                                    </div>
+                                    <span class="date">
+                                        May 29
+                                        <i class="fa-solid fa-ban" style="color: red;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="info">
+                                    <img alt="Rock dream" src="albums for aoty static page/boris.jpg">
+                                    <a class="grey-text" href="#">Boris & Merzbow</a>
+                                    <a href="#"><strong>Rock Dream</strong></a>
+                                    <div class="date">
+                                        <span>2007 • Live</span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="actual-stats">
+                                        <p>89</p>
+                                        <div class="rating">
+                                            <div class="ratingGreen" style="--rating:89;"></div>
+                                        </div>
+                                    </div>
+                                    <span class="date">
+                                        May 22
+                                        <i class="fa-solid fa-ban" style="color: red;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="info">
+                                    <img alt="close to the edge" src="albums for aoty static page/yes boi.jpg">
+                                    <a class="grey-text" href="#">Yes</a>
+                                    <a href="#"><strong>Close to the Edge</strong></a>
+                                    <div class="date">
+                                        <span>1972 • LP</span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="actual-stats">
+                                        <p>80</p>
+                                        <div class="rating">
+                                            <div class="ratingGreen" style="--rating:80;"></div>
+                                        </div>
+                                    </div>
+                                    <span class="date">
+                                        May 20
+                                        <i class="fa-solid fa-ban" style="color: red;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="info">
+                                    <img alt="undun" src="albums for aoty static page/undun dun dun.jpg">
+                                    <a class="grey-text" href="#">The Roots</a>
+                                    <a href="#"><strong>undun</strong></a>
+                                    <div class="date">
+                                        <span>2011 • LP</span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="actual-stats">
+                                        <p>88</p>
+                                        <div class="rating">
+                                            <div class="ratingGreen" style="--rating:88;"></div>
+                                        </div>
+                                    </div>
+                                    <span class="date">
+                                        May 18
+                                        <i class="fa-solid fa-ban" style="color: red;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="info">
+                                    <img alt="Panopticon" src="albums for aoty static page/something something.jpg">
+                                    <a class="grey-text" href="#">Panopticon</a>
+                                    <a href="#"><strong>Det hjemsokte hjertet</strong></a>
+                                    <div class="date">
+                                        <span>2026 • LP</span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="actual-stats">
+                                        <p>90</p>
+                                        <div class="rating">
+                                            <div class="ratingGreen" style="--rating: 90;"></div>
+                                        </div>
+                                    </div>
+                                    <span class="date">
+                                        May 17
+                                        <i class="fa-solid fa-ban" style="color: red;"></i>
+                                    </span>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </section>
+
+                <section class="recent-reviews">
+                    <div class="recent-reviews-text">
+                        <div class="actual-recent-reviews-text">
+                            <strong>RECENT REVIEWS</strong>
+                        </div>
+                        <div class="view">
+                            <a href="#">View all</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cell">
+                            <div class="left">
+                                <img alt="RAMONA" src="albums for aoty static page/backwoods.jpg">
+                                <div class="info">
+                                    <div class="grey-text"><a href="#">Kill Bill</a></div>
+                                    <div class="album-name"><strong><a href="">RAMONA</a></strong></div>
+                                    <div class="score">87</div>
+                                    <div class="rating">
+                                        <div class="ratingGreen" style="--rating: 87;"></div>
+                                    </div>
+                                    <div class="review">konichiwa arigato</div>
+                                    <div class="icons" style="color: #A9A9A9">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-comment"></i>
+                                        <span>2w</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="left">
+                                <img alt="kind of blue" src="albums for aoty static page/kind of blue.jpg">
+                                <div class="info">
+                                    <div class="grey-text"><a href="#">Miles Davis</a></div>
+                                    <div class="album-name"><strong><a href="">Kind of Blue</a></strong></div>
+                                    <div class="score">85</div>
+                                    <div class="rating">
+                                        <div class="ratingGreen" style="--rating: 85;"></div>
+                                    </div>
+                                    <div class="review">Whole lotta blue</div>
+                                    <div class="icons" style="color: #A9A9A9">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-comment"></i>
+                                        <span>2w</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="left">
+                                <img alt="inferno" src="albums for aoty static page/inferno.jpg">
+                                <div class="info">
+                                    <div class="grey-text"><a href="#">Boards of Canada</a></div>
+                                    <div class="album-name"><strong><a href="#">Inferno</a></strong></div>
+                                    <div class="score">92</div>
+                                    <div class="rating">
+                                        <div class="ratingGreen" style="--rating: 92;"></div>
+                                    </div>
+                                    <div class="review">the boards are canadaing</div>
+                                    <div class="icons" style="color: #A9A9A9">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-comment"></i>
+                                        <span>2w</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="left">
+                                <img alt="panopticon" src="albums for aoty static page/something something.jpg">
+                                <div class="info">
+                                    <div class="grey-text"><a href="#">Panopticon</a></div>
+                                    <div class="album-name"><strong><a href="#">Det hjemsokte hjertet</a></strong></div>
+                                    <div class="score">90</div>
+                                    <div class="rating">
+                                        <div class="ratingGreen" style="--rating: 90;"></div>
+                                    </div>
+                                    <div class="review">No idea what he's saying but holy shit that violin is insane</div>
+                                    <div class="icons" style="color: #A9A9A9">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-comment"></i>
+                                        <span>3w</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="left">
+                                <img alt="rage against the machine" src="albums for aoty static page/rage against the machine.jpg">
+                                <div class="info">
+                                    <div class="grey-text"><a href="#">Rage Against the Machine</a></div>
+                                    <div class="album-name"><strong><a href="#">Rage Against the Machine</a></strong></div>
+                                    <div class="score">88</div>
+                                    <div class="rating">
+                                        <div class="ratingGreen" style="--rating: 88;"></div>
+                                    </div>
+                                    <div class="review">this album is fire</div>
+                                    <div class="icons" style="color: #A9A9A9">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-comment"></i>
+                                        <span>2mo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="links">
+                    <div class="playlist">
+                        <i class="fa-brands fa-spotify" style="color: #A9A9A9;"></i>
+                        <span><a href="#">JUNE PLAYLIST</a></span>
+                    </div>
+                    <div class="ad-free">
+                        <span><a href="#">GO AD-FREE</a></span>
+                        <span><i class="fa-regular fa-circle-check" style="color: #A9A9A9;"></i></span>
+                    </div>
+                </section>
+            </div>
+            <div class="right">
+                <aside class="aside-box">
+                    <div class="box">
+                        <div class="about-rating"></div>
+                        <div class="subscriber">
+                            <div class="text">
+                                <div class="left">
+                                    <i class="fa-regular fa-circle-check" style="color: white;"></i>
+                                </div>
+                                <div class="right">
+                                    <strong>Become a Subscriber</strong>
+                                    <p>Subscriber badge, no ads + more benefits.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="text">
+                                <div class="member-text">
+                                    Member since March 4, 2024
+                                </div>
+                                <div class="stats">
+                                    <button>STATS</button>
+                                </div>
+                                <div class="contributions">
+                                    <button>CONTRIBUTIONS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
     <footer>
-
+        <!-- FOOTER : ...it's the footer -->
+         <div class="footer-box">
+            <div class="up">
+                <div class="left">
+                    <div class="cell">
+                        <p class="grey-text"><strong>ALBUMS</strong></p>
+                        <a href="#">Highest Rated</a>
+                        <a href="#">Must Hear Albums</a>
+                        <a href="#">Year End Lists</a>
+                        <a href="#">New Releases</a>
+                        <a href="#">Random</a>
+                    </div>
+                    <div class="cell">
+                        <p class="grey-text"><strong>ARTISTS</strong></p>
+                        <a href="#">Highest Rated</a>
+                        <a href="#">Random</a>
+                    </div>
+                    <div class="cell">
+                        <p class="grey-text"><strong>GENRE</strong></p>
+                        <a href="#">Overview</a>
+                        <a href="#">Indie Rock</a>
+                        <a href="#">Electronic</a>
+                        <a href="#">Hip Hop</a>
+                        <a href="#">Folk</a>
+                        <a href="#">Indie Pop</a>
+                    </div>
+                    <div class="cell">
+                        <p class="grey-text"><strong>MORE</strong></p>
+                        <a href="#">On This Day</a>
+                        <a href="#">Newsworthy</a>
+                        <a href="#">User Updates</a>
+                        <a href="#">Site Updates</a>
+                        <a href="#">Chat</a>
+                        <a href="#">Corrections</a>
+                    </div>
+                    <div class="cell">
+                        <p class="grey-text"><strong>SITE DETAILS</strong></p>
+                        <a href="#">FAQ</a>
+                        <a href="#">Changelog</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Subscribe</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram" style="color: white;"></i>
+                        <i class="fa-brands fa-twitter" style="color: white;"></i>
+                        <i class="fa-brands fa-facebook-f" style="color: white;"></i>
+                        <i class="fa-brands fa-threads" style="color: white;"></i>
+                        <i class="fa-brands fa-bluesky" style="color: white;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="down">
+                <i class="fa-regular fa-copyright" style="color: #A9A9A9;"></i>
+                <span>2026 Album of the Year</span>
+            </div>
+         </div>
     </footer>
 </body>
 </html>
